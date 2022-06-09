@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day2_3_exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="aZS-Vv-53P">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWS-cK-7S5">
+                                <rect key="frame" x="60" y="340" width="115" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="quS-dr-fh2"/>
+                                    <constraint firstAttribute="height" constant="40" id="r6g-PQ-JHA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="WALK">
+                                    <backgroundConfiguration key="background" image="GreenButton"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="WalkOnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1D-dr-a6o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTC-DZ-i6Y">
+                                <rect key="frame" x="708" y="340" width="115" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="d9e-gb-Xiu"/>
+                                    <constraint firstAttribute="height" constant="40" id="vGp-ho-nTv"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="JUMP">
+                                    <backgroundConfiguration key="background" image="OrangeButton"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="JumpOnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lK2-iG-Ktk"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dinosaur/Walk (4)" translatesAutoresizingMaskIntoConstraints="NO" id="bEb-ys-Fky">
+                                <rect key="frame" x="351" y="178" width="194" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="ERQ-z8-gn2"/>
+                                    <constraint firstAttribute="height" constant="162" id="NPU-M2-t7T"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jelly (1)" translatesAutoresizingMaskIntoConstraints="NO" id="fo8-Gf-yx3">
+                                <rect key="frame" x="582" y="243" width="56" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="1rl-jj-B1A">
+                                <rect key="frame" x="375" y="20" width="146" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C35-8k-cb6">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="45.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
+                                        <color key="textColor" red="0.80473721030000001" green="0.59584331509999999" blue="0.0074234702620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJN-Sm-2Ir">
+                                        <rect key="frame" x="100" y="0.0" width="46" height="45.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
+                                        <color key="textColor" red="0.80473721030000001" green="0.59584331509999999" blue="0.0074234702620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3y-fH-Dq3">
+                                <rect key="frame" x="328" y="143" width="240" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ScoreButton" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-XJ-tND">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="20w-0e-h5s"/>
+                                            <constraint firstAttribute="height" constant="128" id="nj8-MV-GXa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zep-Ud-66P">
+                                        <rect key="frame" x="37" y="33" width="166" height="63"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5vH-XJ-tND" firstAttribute="centerX" secondItem="d3y-fH-Dq3" secondAttribute="centerX" id="2cT-Gn-Hw8"/>
+                                    <constraint firstItem="zep-Ud-66P" firstAttribute="centerX" secondItem="d3y-fH-Dq3" secondAttribute="centerX" id="EH1-Xw-U1E"/>
+                                    <constraint firstItem="5vH-XJ-tND" firstAttribute="centerY" secondItem="d3y-fH-Dq3" secondAttribute="centerY" id="RX9-lp-gde"/>
+                                    <constraint firstItem="zep-Ud-66P" firstAttribute="centerY" secondItem="d3y-fH-Dq3" secondAttribute="centerY" id="Yv5-FX-mBI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90314859150000004" green="0.91890621189999999" blue="0.62758445740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1rl-jj-B1A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="16H-UT-Gfv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vWS-cK-7S5" secondAttribute="bottom" constant="13" id="3In-92-Oel"/>
+                            <constraint firstItem="bEb-ys-Fky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AkV-qb-f7d"/>
+                            <constraint firstItem="d3y-fH-Dq3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tfp-XW-gxW"/>
+                            <constraint firstItem="vWS-cK-7S5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bvb-p4-h3a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bEb-ys-Fky" secondAttribute="bottom" priority="999" constant="53" id="nDt-5S-BSD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aTC-DZ-i6Y" secondAttribute="trailing" constant="29" id="tJQ-ZC-aJt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aTC-DZ-i6Y" secondAttribute="bottom" constant="13" id="wo0-Ah-TDX"/>
+                            <constraint firstItem="1rl-jj-B1A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yPZ-33-4CP"/>
+                            <constraint firstItem="d3y-fH-Dq3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zVp-I7-xbn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dinosaurYConstant" destination="nDt-5S-BSD" id="aNk-6s-qK9"/>
+                        <outlet property="imageViewDinosaur" destination="bEb-ys-Fky" id="9r1-yu-7fq"/>
+                        <outlet property="imageViewJelly" destination="fo8-Gf-yx3" id="iez-qP-6VW"/>
+                        <outlet property="labelScore" destination="iJN-Sm-2Ir" id="T39-zO-qqp"/>
+                        <outlet property="viewGameOver" destination="d3y-fH-Dq3" id="zkb-T4-b98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.464285714285712" y="82.608695652173921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dinosaur/Walk (4)" width="680" height="472"/>
+        <image name="GreenButton" width="181" height="79"/>
+        <image name="Jelly (1)" width="311" height="270"/>
+        <image name="OrangeButton" width="181" height="80"/>
+        <image name="ScoreButton" width="597" height="245"/>
+        <image name="background" width="563" height="324"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
